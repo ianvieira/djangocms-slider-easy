@@ -16,7 +16,7 @@ def read(fname):
 INSTALL_REQUIRES = [
     "django>=1.8.0, <1.10",
     "django-cms>=3.0",
-    "easy-thumbnails",
+    "easy-thumbnails==2.3",
 ]
 
 CLASSIFIERS = [
@@ -36,14 +36,14 @@ CLASSIFIERS = [
 ]
 
 setup(
-    name="djangocms-slider",
+    name="djangocms-slider-easy",
     version=version,
-    author="Urga Creatieve Communicatie",
-    author_email="dries@urga.be",
-    description="A slider plugin for djangocms that lets you arrange slides like any other djangocms plugin.",
+    author="Luminum Solutions",
+    author_email="info@akoten.com",
+    description="A slider plugin for djangocms that lets you arrange slides like any other djangocms plugin. Fork of urga/djangocms-slider, but using easy_thumbnails.",
     license="BSD",
     keywords=["slideshow", "django", "cms", "plugin"],
-    url="https://github.com/urga/djangocms-slider",
+    url="https://github.com/Akoten/djangocms-slider-easy",
     packages=['djangocms_slider', 'djangocms_slider.migrations'],
     install_requires=INSTALL_REQUIRES,
     classifiers=CLASSIFIERS,
