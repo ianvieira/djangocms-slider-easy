@@ -1,4 +1,4 @@
-{% load thumbnail %}
+{% load thumbnail from sorl.thumbnail as sorl_thumbnail %}
 
 <li class="slideshow-slide">
   {% thumbnail instance.image "1920x480" crop="center" as thumb %}
