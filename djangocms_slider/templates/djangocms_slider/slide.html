@@ -1,7 +1,6 @@
-{% load sorl_thumbnail %}
+{% load thumbnail %}
 
 <li class="slideshow-slide">
-  {% sorl_thumbnail instance.image "1920x480" crop="center" as thumb %}
+  {% thumbnail instance.image "1920x480" crop="center" as thumb %}
   <img src="{{ thumb.url }}" width="1920" height="480" alt="{{ instance.alt }}"{% if instance.longdesc %} title="{{ instance.longdesc }}"{% endif %} />
-  {% endthumbnail %}
 </li>
