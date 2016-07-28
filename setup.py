@@ -14,9 +14,9 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 INSTALL_REQUIRES = [
-    "django>=1.8.0, <1.9",
+    "django>=1.8.0, <1.10",
     "django-cms>=3.0",
-    "sorl-thumbnail",
+    "easy-thumbnails",
 ]
 
 CLASSIFIERS = [
