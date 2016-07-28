@@ -1,4 +1,3 @@
-{% raw %}
 {% load smart_load %}
 {% load thumbnail from sorl.thumbnail as sorl_thumbnail %}
 
@@ -7,4 +6,3 @@
   <img src="{{ thumb.url }}" width="1920" height="480" alt="{{ instance.alt }}"{% if instance.longdesc %} title="{{ instance.longdesc }}"{% endif %} />
   {% endthumbnail %}
 </li>
-{% endraw %}
