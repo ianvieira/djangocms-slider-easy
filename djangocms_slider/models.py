@@ -58,8 +58,10 @@ class Slide(CMSPlugin):
 @python_2_unicode_compatible
 class Slider(CMSPlugin):
     """
-    Plugin that can only contain Slides.
+    Plugin that can contain Slides.
     """
+    slider_thumb_id = models.CharField(max_length=128, null=True, blank=True)
+    use_simple_settings = models.BooleanField(default=True)
 
     def __str__(self):
         return _(u"%s Images") % self.cmsplugin_set.all().count()

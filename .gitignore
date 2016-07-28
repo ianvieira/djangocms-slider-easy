@@ -6,7 +6,7 @@
 .settings
 .*
 djangocms_slideshow.egg-info
-djangocms_slider.egg-info
+djangocms_slider_easy.egg-info
 dist
 build
 env*
