@@ -17,6 +17,8 @@ INSTALL_REQUIRES = [
     "django>=1.8.0, <1.10",
     "django-cms>=3.0",
     "easy-thumbnails==2.3",
+    'django-filer>=1.2',
+    'cmsplugin-filer>=1.1'
 ]
 
 CLASSIFIERS = [
@@ -38,12 +40,12 @@ CLASSIFIERS = [
 setup(
     name="djangocms-slider-easy",
     version=version,
-    author="Luminum Solutions",
-    author_email="info@akoten.com",
+    author="Ian Vieira",
+    author_email="ian@ianvieira.com.br",
     description="A slider plugin for djangocms that lets you arrange slides like any other djangocms plugin. Fork of urga/djangocms-slider, but using easy_thumbnails.",
     license="BSD",
     keywords=["slideshow", "django", "cms", "plugin"],
-    url="https://github.com/Akoten/djangocms-slider-easy",
+    url="https://github.com/ianvieira/djangocms-slider-easy",
     packages=['djangocms_slider', 'djangocms_slider.migrations'],
     install_requires=INSTALL_REQUIRES,
     classifiers=CLASSIFIERS,
